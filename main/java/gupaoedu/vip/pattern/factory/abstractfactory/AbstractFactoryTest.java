@@ -13,5 +13,10 @@ public class AbstractFactoryTest {
         factory.createNote().record();
         factory.createVideo().record();
 
+        ICourseFactory factory1 = new PythonFactory();
+        factory1.createVideo().record();
+        factory1.createNote().record();
+        factory1.createCourse().record();
+
     }
 }

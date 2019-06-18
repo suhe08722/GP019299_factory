@@ -1,6 +1,7 @@
 package gupaoedu.vip.pattern.factory.abstractfactory;
 
 import gupaoedu.vip.pattern.factory.ICourse;
+import gupaoedu.vip.pattern.factory.PythonCourse;
 
 /**
  * 2019/6/18
@@ -9,16 +10,16 @@ import gupaoedu.vip.pattern.factory.ICourse;
 public class PythonFactory implements ICourseFactory {
     @Override
     public ICourse createCourse() {
-        return null;
+        return new PythonCourse();
     }
 
     @Override
     public INote createNote() {
-        return null;
+        return new PythonNote();
     }
 
     @Override
     public IVideo createVideo() {
-        return null;
+        return new PythonViedo();
     }
 }
